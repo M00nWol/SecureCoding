@@ -1,8 +1,10 @@
 // 소스 : test.c
-// 컴파일 -> test.exe 
+// 컴파일 -> test.exe [arg1]
 
 
 #include <stdio.h>
+
+#define HELLO_STR "Hello"
 
 int sum(int i, int j){
     return (i + j);
@@ -14,7 +16,5 @@ int main(int argc, int *argv, char *env){
 // env = 환경변수
     printf("Hello\n");
 
-    sum(1, 2);
-
-    return 0;
+    return sum(1, 2);
 }
